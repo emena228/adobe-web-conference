@@ -1,0 +1,26 @@
+.settings {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background-color: $black;
+  width: 350px;
+  text-align: center;
+  padding: 20px 30px;
+  z-index: 100;
+  button {
+    margin: 0 10px;
+  }
+  .formControl {
+    min-width: 100%;
+    margin-bottom: 30px;
+    * {
+      color: white;
+      font-size: 9pt !important;
+    }
+  }
+}
+
+.menuItem {
+  font-size: 9pt !important;
+}

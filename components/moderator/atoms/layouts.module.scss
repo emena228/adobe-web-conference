@@ -1,0 +1,25 @@
+.layouts {
+  position: relative;
+}
+
+.layouts {
+  position: relative;
+  // width: 50%;
+}
+.layoutsHeader {
+  margin-top: 10px;
+  height: 55px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  font-weight: 300;
+  padding: 10px 20px;
+  label {
+    display: inline-block;
+    min-width: 80px;
+  }
+}
+
+.layoutsSelect {
+  position: relative;
+  margin: 0 0 0 10px;
+}

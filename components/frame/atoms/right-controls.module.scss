@@ -1,0 +1,72 @@
+.rightControls {
+    position: absolute;
+    bottom: 100px;
+    right: 22px;
+    background-color: #f9f9f9;
+    z-index: $z-index-9;
+    padding: 10px 0 0 0;
+    &Item {
+        margin: 0 0 5px 0;
+        // &:last-of-type {
+        //     margin-top: 10vw;
+        // }
+    }
+    &Muted {
+        position: absolute;
+        right: calc( 100% + 5px );
+        white-space: nowrap;
+        background-color: $red;
+        top: -50px;
+        font-weight: 300;
+        padding: 14px 20px;
+        border-radius: 12px;
+        font-size: 15px;
+        color: white;
+        @include respond-to("medium-lg") {
+            font-size: 12px;
+        }
+    }
+}
+
+.control {
+    background-color: transparent;
+    border: none;
+    max-width: 40px;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    display: block;
+
+    &:disabled {
+        cursor: not-allowed !important;
+    }
+
+    &:hover {
+        label {
+            opacity: 1 !important;
+            background-color: #fff;
+            transition: opacity 300ms;
+            text-align: left;
+        }
+    }
+
+    label {
+        position: absolute;
+        right: calc( 100% + 5px );
+        top: 47%;
+        margin: 0;
+        font-size: 15px;
+        transform: translateY(-50%);
+        border-radius: 6px;
+        overflow: hidden;
+        opacity: 0;
+        padding: 9px 10px;
+        pointer-events: none;
+        white-space: nowrap;
+        font-weight: 300;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }

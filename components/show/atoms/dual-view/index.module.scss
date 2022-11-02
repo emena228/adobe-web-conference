@@ -1,0 +1,35 @@
+.dualView {
+    position: relative;
+    &Inner {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &Left {
+        width: 20%;
+    }
+    &Right {
+        width: 73%;
+        margin-left: 2%;
+    }
+    &Video {
+        position: relative;
+        margin: 0 auto;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        video {
+            max-width: 100%;
+            position: absolute;
+            width: 100.25% !important;
+            height: 100.25% !important;
+            object-fit: cover;
+            object-position: center top;
+            
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.videoPlayer {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // height: 100%;
+  z-index: 1;
+  video {
+    object-fit: cover;
+    background-color: transparent;
+    object-position: center;
+    display: block;
+    position: absolute;
+    margin: 0;
+  }
+  &Absolute {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+}
+
+
+.muteToggle {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: $z-index-8;
+}
+

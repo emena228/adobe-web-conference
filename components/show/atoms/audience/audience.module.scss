@@ -1,0 +1,11 @@
+.audience {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    &Inner {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}

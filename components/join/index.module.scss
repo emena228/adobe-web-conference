@@ -1,0 +1,68 @@
+.join {
+  position: relative;
+  z-index: 161;
+  h2 {
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 0.9em;
+    width: 85%;
+    color: $black;
+  }
+  h3 {
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  &Video {
+    height: 230px;
+    width: 315px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    margin: 10px auto;
+    &El {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      height: 100%;
+    }
+  }
+  &Actions {
+    margin: 30px 0 0 0;
+    text-align: center;
+    button {
+      background-color: $red;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      color: $black;
+      font-weight: 300;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+  }
+}
+
+.vid {
+  height: 230px;
+  width: 315px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px auto;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  video {
+    object-fit: cover !important;
+  }
+}

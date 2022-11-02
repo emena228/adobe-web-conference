@@ -1,0 +1,23 @@
+.videoPlayer {
+  position: relative;
+  video {
+    object-fit: cover;
+    background-color: black;
+    display: block;
+  }
+}
+
+.unmute {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 100;
+  background-color: $red;
+  color: $black;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 3px 6px 0px 6px;
+  font-weight: 300;
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+.showVideoPlayer {
+    width: 100%;
+    position: relative;
+    padding: 60px;
+    max-width: 80%;
+
+    &Inner {
+        overflow: hidden;
+        border-radius: 20px;
+        -webkit-mask-image: -webkit-radial-gradient(white, black); 
+    
+        img {
+          display: block;
+        }
+        &Wrap {
+          border: 1px solid #000;
+          border-radius: 20px;
+        }
+    }
+    
+    video {
+      display: block;
+      margin: 0;
+      
+    }
+}

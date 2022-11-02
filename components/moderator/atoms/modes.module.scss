@@ -1,0 +1,33 @@
+.modes {
+  position: relative;
+}
+
+.modesHeader {
+  // position: absolute;
+  margin-top: 2px;
+  // top: 0;
+  // left: 0;
+  height: 50px;
+  width: 100%;
+  // text-align: center;
+  border-bottom: 1px solid black;
+  font-weight: 300;
+  padding: 10px 20px;
+  position: relative;
+  top: -5px;
+  label {
+    display: inline-block;
+    min-width: 80px;
+  }
+}
+
+.modesSelect {
+  position: relative;
+  margin: 0 0 0 10px;
+}
+
+.modesSubmit {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 0 10px;
+}

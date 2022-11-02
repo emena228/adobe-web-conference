@@ -1,0 +1,33 @@
+.multiSwtich {
+  background: rgba(61, 137, 154, 0.15);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+
+  .multiSwtichButton {
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 100%;
+    margin: 4px 0px 4px 4px;
+    padding: 6px 8px;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+
+    &:last-child {
+      margin-right: 4px;
+    }
+    &:hover {
+      background: rgba(61, 137, 154, 0.15);
+    }
+
+    &.active {
+      color: white;
+      background-color: #e73030;
+    }
+  }
+}

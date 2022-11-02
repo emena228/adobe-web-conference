@@ -1,0 +1,26 @@
+@import "@scss/variables.scss";
+
+.moderator {
+  position: relative;
+}
+
+.invert {
+  background: black !important;
+  color: white;
+  .moderatorWrapperRight {
+    border-left: 1px solid #fff;
+  }
+}
+
+.moderatorWrapper {
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: 0px;
+  position: relative;
+  display: flex;
+  background-color: white;
+  &Right {
+    width: 50%;
+    border-left: 1px solid #000;
+  }
+}

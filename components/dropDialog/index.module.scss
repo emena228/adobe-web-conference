@@ -1,0 +1,43 @@
+.dropModal {
+  background-color: rgba(109, 87, 165, 0.8);
+  overflow-y: hidden;
+}
+
+.dialogClose {
+  position: absolute;
+  z-index: $z-index-9;
+  right: 25px;
+  top: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  img {
+    width: 30px;
+  }
+}
+
+.dialogContainer {
+  position: relative;
+  background-color: #80d9e0;
+  padding: 55px 25px 25px 25px;
+}
+
+.inner {
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0;
+  margin: 6% auto;
+}
+
+.modal {
+  z-index: $z-index-0;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0 !important;
+  margin: 3% auto;
+}
+
+.active {
+  z-index: $z-index-8;
+}

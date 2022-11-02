@@ -1,0 +1,39 @@
+.switch {
+    margin: 20px 0 0 0;
+    position: relative;
+    left: 5px;
+    user-select: none;
+    &:hover {
+        .switchRight {
+            opacity: 1 !important;
+        }
+    }
+    &Inner {
+        display: flex;
+    }
+    &Left {
+        position: relative;
+        
+        img {
+            cursor: pointer;
+        }
+
+        
+    }
+    &Right {
+        position: relative;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 300ms;
+        img {
+            position: relative;
+            top: 43px;
+            left: 20px;
+            pointer-events: none;
+        }
+    }
+}
+
+.disabled {
+    cursor: not-allowed;
+}

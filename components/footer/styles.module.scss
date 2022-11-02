@@ -1,0 +1,9 @@
+.footer {
+  color: $black;
+  padding: 0 0 10px 0;
+  position: relative;
+  z-index: $z-index-8;
+  a {
+    border-bottom: 1px solid $black;
+  }
+}

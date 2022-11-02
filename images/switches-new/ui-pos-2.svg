@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="139" viewBox="0 0 30 139">
+  <g id="SLIDER_FUNCTIONALITY" data-name="SLIDER FUNCTIONALITY" transform="translate(-1704.5 -716.5)">
+    <path id="Path_268" data-name="Path 268" d="M-11,0H98a15,15,0,0,1,0,30H-11A15,15,0,0,1-26,15,15,15,0,0,1-11,0Z" transform="translate(1704.5 829.5) rotate(-90)" fill="#5a5a5a"/>
+    <circle id="Ellipse_48" data-name="Ellipse 48" cx="12.531" cy="12.531" r="12.531" transform="translate(1732.031 757.453) rotate(90)" fill="#fff"/>
+    <line id="Line_32" data-name="Line 32" x2="12" transform="translate(1713.5 821.02)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_33" data-name="Line 33" x2="12" transform="translate(1713.5 786.996)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_34" data-name="Line 34" x2="12" transform="translate(1713.5 753.02)" fill="none" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>

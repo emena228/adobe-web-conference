@@ -1,0 +1,68 @@
+@import "@scss/variables.scss";
+
+.activeUsersRefresh {
+  float: right;
+  position: relative;
+  top: 8px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.activeUsersList {
+  position: relative;
+  width: 60%;
+}
+
+.activeUsersListWrapper {
+  list-style: none;
+  overflow-y: scroll;
+  word-break: break-all;
+  word-wrap: break-word;
+  max-height: 100%;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.activeUsersHeader {
+  position: absolute;
+  margin-top: 10px;
+  top: 0;
+  left: 0;
+  height: 30px;
+  // width: 20%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-weight: 300;
+}
+
+.activeUsersOccupancy {
+  width: auto;
+  background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 7px;
+  text-align: center;
+}
+
+.rotating {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

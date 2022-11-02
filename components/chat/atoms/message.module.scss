@@ -1,0 +1,81 @@
+
+
+.message {
+  position: relative;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 18px;
+  color: #000;
+  img {
+    max-width: 24px;
+    margin: 0 10px 0 0;
+  }
+  &:hover {
+    > button {
+      display: block;
+    }
+  }
+  > button {
+    position: absolute;
+    left: -2px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: none;
+    cursor: pointer;
+  }
+  &Admin {
+    .messageName {
+      color: red !important;
+    }
+  }
+  &Sender {
+    color: white;
+    &NameWrap {
+      position: relative;
+      width: 100%;
+      &:hover {
+        .messageSenderFullName {
+          opacity: 1;
+        }
+      }
+    }
+
+    &FullName {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background-color: #F0F0F0;
+      opacity: 0;
+    }
+  }
+  &Name {
+    color: #000;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+  }
+
+  &Content {
+    color: inherit;
+    background-color: #FFFFFF;
+    padding: 7px 15px;
+    border-radius: 15px;
+    display: block;
+    font-size: 16px;
+    font-size: 300;
+    margin: 3px 0 0 20px;
+  }
+}
+
+.me {
+  .messageSenderFullName {
+    display: none;
+  }
+}

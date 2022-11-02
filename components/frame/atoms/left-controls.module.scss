@@ -1,0 +1,62 @@
+.leftControls {
+    position: absolute;
+    top: 30px;
+    left: 21px;
+    width: 40px;
+    background-color: #f9f9f9;
+    z-index: $z-index-9;
+    padding: 10px 0;
+    &Item {
+        margin: 0 0 5px 0;
+        &:last-of-type {
+            margin-top: 20px;
+            
+        }
+    }
+}
+
+.control {
+    background-color: transparent;
+    border: none;
+    max-width: 40px;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    display: block;
+    outline: none;
+
+    &:disabled {
+        cursor: not-allowed !important;
+    }
+
+    
+
+    &:hover {
+        label {
+            opacity: 1 !important;
+            background-color: #fff;
+            text-align: left;
+        }
+    }
+
+    label {
+        position: absolute;
+        left: calc( 100% + 5px );
+        top: 47%;
+        margin: 0;
+        font-size: 15px;
+        transform: translateY(-50%);
+        opacity: 0;
+        overflow: hidden;
+        padding: 9px 10px;
+        pointer-events: none;
+        white-space: nowrap;
+        border-radius: 6px;
+        font-weight: 300;
+        transition: opacity 300ms;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }

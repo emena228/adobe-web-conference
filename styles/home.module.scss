@@ -1,0 +1,48 @@
+.container {
+  min-height: 100vh;
+}
+
+
+.main {
+  padding: 3rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentationBg {
+  background-color: $black;
+}
+
+.liveWrapper {
+  min-height: 100vh;
+  width: 870px;
+  margin-top: 60px;
+}
+
+.bgEl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: $z-index-1;
+  opacity: 1;
+}
+
+.authTokenSplash {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &Hero {
+    max-width: 60px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}

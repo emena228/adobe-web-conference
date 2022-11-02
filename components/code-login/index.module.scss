@@ -1,0 +1,84 @@
+@import "@scss/variables.scss";
+
+.form {
+  @include respond-to("medium-lg") {
+    max-width: 440px;
+  }
+}
+
+.hero {
+  max-width: 400px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  position: absolute;
+  top: -170px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 100;
+  img {
+    max-width: 100%;
+  }
+}
+
+.heroFooter {
+  max-width: 210px;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 100;
+  img {
+    max-width: 100%;
+  }
+}
+
+.confirmationField {
+  margin: 20px 0 30px 0;
+  label {
+    margin: 0 0 6px 0;
+  }
+}
+
+.submitWrap {
+  text-align: center;
+}
+
+.submitButton {
+  width: auto !important;
+  background-color: #f3f867;
+  color: $black;
+  font-size: 18px;
+  border: 3px solid transparent;
+  padding: 10px 30px 6px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: all ease-in-out;
+  &:disabled {
+    background-color: rgba(255, 255, 255, 0);
+    color: white !important;
+    border: 3px solid white;
+    opacity: 1;
+  }
+}
+
+.submitting {
+  button {
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23ffffff' /%3E%3Cstop offset='25%25' stop-color='%23ffffff' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E")
+      1;
+  }
+}
+
+.loginHelp {
+  text-align: center;
+  color: white;
+  margin: 30px 0;
+  position: relative;
+  z-index: 100;
+  a {
+    text-decoration: underline;
+  }
+}

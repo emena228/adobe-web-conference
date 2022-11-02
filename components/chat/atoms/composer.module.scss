@@ -1,0 +1,74 @@
+@import "@scss/variables.scss";
+
+.composerWrapper {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 50;
+  background-size: contain;
+  object-fit: contain;
+  background-color: white;
+}
+
+.composerForm {
+  padding: 10px 8px;
+}
+
+.composerInput {
+  // width: 75%;
+  // margin-right: 1%;
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #707070;
+  font-size: 16px;
+  font-weight: bold;
+  height: 65px;
+  font-weight: 300;
+  resize: none;
+  font-family: "Adobe Clean", sans-serif;
+  flex: 2;
+  padding: 10px 15px;
+  
+}
+
+.composerSend {
+  
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Adobe Clean", sans-serif;
+  font-weight: 300;
+  top: 2px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  outline: none;
+  padding: 0 5px;
+  transform: scale(1);
+  &:active {
+    transform: scale(0.97);
+    color: #333;
+  }
+  img {
+    max-width: 40px;
+    position: relative;
+    margin: 0 0 4px 0;
+  }  
+}
+
+.composerFormInner {
+  
+  border-radius: 6px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  display: flex;
+  input {
+    font-size: 16px;
+    position: relative;
+    top: -2px;
+  }
+}

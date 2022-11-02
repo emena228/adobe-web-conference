@@ -1,0 +1,43 @@
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.opacityAnimation {
+  transition: opacity 720ms $ease-expo;
+  opacity: 0;
+
+  &.entering,
+  &.entered {
+    opacity: 1;
+  }
+  &.exiting {
+    transition: opacity 330ms $ease-expo;
+    opacity: 0;
+  }
+  &.exited {
+    opacity: 0;
+  }
+}
+
+.slideAnimation {
+  transition: transform 1400ms $ease-expo, opacity 800ms $ease-expo;
+  transform: translateY(-1400px);
+  opacity: 0;
+
+  &.entering,
+  &.entered {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  &.exiting,
+  &.exited {
+    transform: translateY(-1400px);
+    opacity: 0;
+  }
+}

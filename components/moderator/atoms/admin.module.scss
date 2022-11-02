@@ -1,0 +1,13 @@
+.admin {
+  height: 200px;
+  h2 {
+    margin: 0;
+    background-color: $black;
+    text-align: center;
+    padding: 4px 0 5px 0;
+    font-size: 20px;
+  }
+  &Options {
+    margin: 10px 10px 0 10px;
+  }
+}

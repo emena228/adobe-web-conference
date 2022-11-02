@@ -1,0 +1,20 @@
+.presenters {
+    position: relative;
+    margin: 0 0 30px 0;
+    &Inner {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    &Row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &Item {
+            max-width: 14.7vw;
+        }
+        // &ItemPrimary {
+        //     max-width: 17vw;
+        // }
+    }
+   
+}
